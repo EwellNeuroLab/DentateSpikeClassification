@@ -1,6 +1,6 @@
 # Dentate Spike Interface (Ewell lab, Gergely Tarcsay)
 
-GUI was tested on 10/27/2025.
+GUI was tested on 10/27/2025 in MATLAB R2025a.
 
 ## Test data set
 The test data is currently available at https://drive.google.com/drive/folders/1o0bo4AFjFgCmTQc7dwiroiPEZOGQYZkE?usp=drive_link, containing four distinct data sets. Each data set has two *.mat files: an LFP file and a config file with the following parameters:
@@ -25,6 +25,8 @@ After downloading the Interface directory from GitHub, add the folder to MATLAB'
 ### 1. Loading the data
 The interface expects two input files that are located in the same folder: 1) a file (.mat) containing the LFP data (downsampling recommended to 1-2 kHz) and 2) a configuration file (.mat) with channel map, probe geometry specifications and LFP sampling rate. Press the **Load data** button and select your data. Upon loading data, LFP is filtered in the 10 - 200 Hz range that can be adjusted by the user. 
 Note that in the **Plot settings** panel the time window (*t0*/*t1*) and distance between channels (*Shift*) can be set.
+
+![Alt text](images/LoadingLFP.png)
 
 ### 2. Fixing flat channels
 LFP should be inspected on all channels and flat channels may be fixed in the *Fixed dead channels* panel. 
