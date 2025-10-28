@@ -3,7 +3,7 @@
 % load data
 rootdir = "H:\Data_to_publish\"; % changed this fo
 ewell = load(strcat(rootdir,"CellTable_Ewell.mat"));
-swil = load(strcat(rootdir, "CellTable_SWIL.mat");
+swil = load(strcat(rootdir, "CellTable_SWIL.mat"));
 
 
 z_thresh = 2.58;
@@ -534,5 +534,6 @@ colormap bone
 hold on
 xlabel("Time from DS (ms)")
 ylabel("Cell ID")
+
 
 end
