@@ -1,6 +1,7 @@
-# Dentate Spike Interface (Ewell lab, Gergely Tarcsay)
+# Dentate Spike Interface 
 
 GUI was tested on 10/27/2025 in MATLAB R2025a.
+(Ewell lab, Gergely Tarcsay)
 
 ## Test data set
 The test data is currently available at https://drive.google.com/drive/folders/1o0bo4AFjFgCmTQc7dwiroiPEZOGQYZkE?usp=drive_link, containing four distinct data sets. Each data set has two *.mat files: an LFP file and a config file with the following parameters:
