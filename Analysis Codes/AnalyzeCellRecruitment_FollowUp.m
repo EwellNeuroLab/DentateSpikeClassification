@@ -6,7 +6,7 @@
 % evaluating mouse-wise and total count
 rootdir = "H:\Data_to_publish\"; % changed this 
 ewell = load(strcat(rootdir,"CellTable_Ewell.mat"));
-swil = load(strcat(rootdir, "CellTable_SWIL.mat");
+swil = load(strcat(rootdir, "CellTable_SWIL.mat"));
 
 
 
@@ -129,4 +129,5 @@ c_qw = multcompare(stats_qw, 'CriticalValueType','bonferroni');
 
 [p_run, tbl_run, stats_run] = friedman(DSRecruit_pooled_run, 1, 'off');
 c_run = multcompare(stats_run, 'CriticalValueType','bonferroni');
+
 
