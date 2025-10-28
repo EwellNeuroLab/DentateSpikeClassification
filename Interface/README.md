@@ -36,6 +36,8 @@ Automatic option (slower): Note that flat channels can be automatically detected
 
 In this example, two channels were fixed using the manual option. Fixed channels are marked in red color, currently selected color is marked in yellow.
 
+![Alt text](images/FixingDeadChannels.png)
+
 ### 3. Detecting dentate spikes
 Click on the *Detect DS* tab. Select the shank to be used for detection and channel (*Use channel*). Note that channel can be automatically estimated when *Automatic estimation* is selected in the *Channel selection* subpanel. Set z-score threshold, minimum/maximum width and maximum amplitude of detected events. Select a reference channel outside the DG - events detected on the two channels in a coincidence are discarded. When left on 0, no reference channel will be used. Press the **Detect DS** button.
 
@@ -43,12 +45,14 @@ Channel used for detection are marked in blue. Detected events and parameters ar
 
 In this example, dentate spikes were detected on shank 1. 
 
+![Alt text](images/DetectDS.png)
 
 ### 4. Locating the outer and middle molecular layers
 Press the **Compute** button in the *Current-source density* panel to calculate the CSD across all channels on a given shank. By default, CSD is calculated +/- 50 ms around the peak of DSs. CSD is smoothed using a gaussian kernel with a half-width of 1.5 channels (*Kernel sigma*) by default.
 
 Next, press the **Run PCA** button in the *Clustering* panel. In this step, PCA is performed on the CSD measured at the peak of the DS on selected channels (*PCA channels*, by default each channel is used except the most superficial and the deepest). Events are mapped into the PC1-PC2 space. K-means clustering is performed on the events by default, however, the outer and the middle molecular layers (oml/mmml) are not separated with this method (use the upper right panel to visually inspect the CSD of the two clusters). 
 
+![Alt text](images/Kmeans.png)
 
 To locate the oml and mml, select the **PCX** method in the *Method* subpanel and press **Cluster**. In this method, events with the most negative and most positive values along PC-X axis (PC1 by default). To include fewer or more events, change the **%ile value** (default by 75, meaning that the 25% most negative and 25% most positive values are kept only). 
 
@@ -56,6 +60,7 @@ Use the **Manual** method, when 1) the **PCX** method does not give a sufficient
 
 If oml/mml channels can be identified in the lower blade, set the channels manually in the *Add layers* panel.
 
+![Alt text](images/PCXCluster.png)
 
 ### 5. DS classification
 Press the **Classify** button in the *Classification* panel (default is 0.5 cut-off of relative current sink score). Use the top, middle panel in the *DS Viewer* to inspect the current-sink profile for each DS type (cyan - DS1, magenta - DS2, purple - DS3). If oml/mml layers need to be modified, use the *Readjust ML* field and then press **Classify** again.
@@ -73,6 +78,7 @@ To show LFP/CSD for every shank, select the **Multi-shank** option.
 To show the temporal dynamics of the CSD in the oml/mml, select the **Show coincidence** option.
 To change the max/min color value for the CSDs, use the **clim** field.
 
+![Alt text](images/Classify.png)
 
 ### 6. Saving and output file.
 Press the **Save button** in the *Save results* panel with a specified file name. The file contains the following variables:
