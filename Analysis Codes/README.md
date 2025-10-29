@@ -6,7 +6,8 @@ AnalyzeCellRecruitment_FollowUp.m: matlab script to reproduce Figure S3 A-B
 
 All other function are helper functions needed in the 3 main scripts.
 
-Input data is availabe for now at ...
+Input data is availabe at *Tarcsay, Gergely; Saxena, Rajat; Long, Royston; Shobe, Justin L.; McNaughton, Bruce L.; Ewell, Laura A. (2025), “Dentate spikes comprise a continuum of relative input strength 
+from the lateral and medial entorhinal cortex”, Mendeley Data, V1, doi: 10.17632/grcn2dd9st.1*
 
 * DS_dataA: DS classification output file for each mouse in data A
 * DS_dataB: DS classification output file for each mouse in data B. Note that in this case rest/behavior sessions were concatanated, therefore this file is not used directly for rate analysis.
