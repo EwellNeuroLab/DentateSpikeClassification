@@ -4,7 +4,7 @@ GUI was tested on 10/27/2025 in MATLAB R2025a.
 (Ewell lab, Gergely Tarcsay)
 
 ## Test data 
-The test data is currently available at https://drive.google.com/drive/folders/1o0bo4AFjFgCmTQc7dwiroiPEZOGQYZkE?usp=drive_link, containing two *.mat files: an LFP file and a config file with the following parameters:
+The test data is currently available at , containing two *.mat files: an LFP file and a config file with the following parameters:
 * sampling rate
 * channel map
 * x coordinates
