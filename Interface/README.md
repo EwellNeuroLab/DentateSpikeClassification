@@ -13,10 +13,11 @@ The test data is currently available at , containing two *.mat files: an LFP fil
 * probe type (optional)
 * recording system (optional)
 
-The test data cover the following cases:
+Details: Recordings with Cambridge Neurotech, H2 (double shank); channels are organized in the LFP file; fs = 2 kHz (Ewell lab)
 
-1) Recordings with Cambridge Neurotech, H2 (double shank); channels are organized in the LFP file; fs = 2 kHz (Ewell lab)
-2) Recordings with UCLA 256-channel, subset if channels is included; channels are specificed in the config file; fs = 1 kHz (McNaughton lab)
+Data is available at *Tarcsay, Gergely; Saxena, Rajat; Long, Royston; Shobe, Justin L.; McNaughton, Bruce L.; Ewell, Laura A. (2025), “Dentate spikes comprise a continuum of relative input strength 
+from the lateral and medial entorhinal cortex”, Mendeley Data, V1, doi: 10.17632/grcn2dd9st.1 - TestData folder*
+
 
 ## Interface pipeline
 After downloading the Interface directory from GitHub, add the folder to MATLAB's path. When running on your own data, make sure to create a configuration file containing the details specified above. As reference, please see config files in the test data set.
