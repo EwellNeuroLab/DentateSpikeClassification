@@ -3,8 +3,8 @@
 GUI was tested on 10/27/2025 in MATLAB R2025a.
 (Ewell lab, Gergely Tarcsay)
 
-## Test data set
-The test data is currently available at https://drive.google.com/drive/folders/1o0bo4AFjFgCmTQc7dwiroiPEZOGQYZkE?usp=drive_link, containing four distinct data sets. Each data set has two *.mat files: an LFP file and a config file with the following parameters:
+## Test data 
+The test data is currently available at https://drive.google.com/drive/folders/1o0bo4AFjFgCmTQc7dwiroiPEZOGQYZkE?usp=drive_link, containing two *.mat files: an LFP file and a config file with the following parameters:
 * sampling rate
 * channel map
 * x coordinates
@@ -15,10 +15,8 @@ The test data is currently available at https://drive.google.com/drive/folders/1
 
 The test data cover the following cases:
 
-1) Recordings with Neuronexus, H64LP (single shank); channels are organized in the LFP file; fs = 2 kHz (Ewell lab)
-2) Recordings with Cambridge Neurotech, H2 (double shank); channel order is specified in config file; fs = 2 kHz (Ewell lab)
-3) Recordings with Cambridge Neurotech, H2 (double shank); channels are organized in the LFP file; fs = 2 kHz (Ewell lab)
-4) Recordings with UCLA 256-channel, subset if channels is included; channels are specificed in the config file; fs = 1 kHz (McNaughton lab)
+1) Recordings with Cambridge Neurotech, H2 (double shank); channels are organized in the LFP file; fs = 2 kHz (Ewell lab)
+2) Recordings with UCLA 256-channel, subset if channels is included; channels are specificed in the config file; fs = 1 kHz (McNaughton lab)
 
 ## Interface pipeline
 After downloading the Interface directory from GitHub, add the folder to MATLAB's path. When running on your own data, make sure to create a configuration file containing the details specified above. As reference, please see config files in the test data set.
